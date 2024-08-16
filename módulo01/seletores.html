@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+        /*
+        *SELETORES: definem em quais elementos nós vamos aplicar o CSS
+        * 1. Seletor de Tag/Tipo
+        * 2. Seletor de Id
+        * 3. Seletor de Classes
+        * 4. Seletor Universal
+        * 5. Seletor de atributo
+        */
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: rgb(107, 107, 107);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#seletores{
+            background-color: lightblue;
+            color: darkblue;
+        }
+
+        div#seletores li {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        #texto-boas-vindas {
+            background-color: red;
+            color: white;
+        }
+
+        .lorem-got {
+            background-color: rgba(0, 0, 0, 0.678);
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        [title="Netflix"] {
+            color: red;
+        }
+
+        [title="Prime"] {
+            color: darkblue;
+        }
+
+        [title="Spotify"] {
+            color: lime;
+        }
+
+        [title~="Streaming"] {
+            color: yellow;
+        }
+
+        [href^="http://"] {
+            background-color: lightgreen;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem-vindo!</p>
+    <p id="explicando-seletores">No CSS nós possuímos os seguintes seletores: </p>
+    <div id="seletores">
+        <ul>
+            <li><strong>Seletor por Tipo: </strong> Busca elementos por uma taqg HTML específica.</li>
+            <li><strong>Seletor por ID(#): </strong>Busca elementos através do atributo "id".</li>
+            <li><strong>Seletor por Classe(.):</strong> Busca elementos através do atributo "class".</li>
+            <li><strong>Seletor Universal(*):</strong> Seleciona todos os elementos HTML.</li>
+            <li><strong>Seletor de Atributo ([atrib]):</strong> Seleciona elementos que possuem um atributo específico em nosso documento HTML e conseguimos também buscar atributos com um valor específico.</li>
+        </ul>
+    </div>
+
+    <h2>Alguns Lorens de Teste</h2>
+
+    <p class="lorem-got">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste laborum consectetur adipisci voluptas, cumque tempore veritatis suscipit! Aspernatur saepe mollitia sit, consectetur consequuntur sequi perspiciatis eos magni, soluta cumque autem?</p>
+
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e0/Game_of_Thrones_Season_8.png" alt="">
+    </figure>
+
+    <p class="lorem-got">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit repudiandae rerum eius quis accusamus earum nemo corporis optio, illum sit veniam nam consequatur modi, facere maiores explicabo neque ducimus!</p>
+
+    <h2>Links aleatórios</h2>
+
+    <div>
+        <ul>
+            <li>
+                <a title="Netflix" href="http://netflix.com">Netflix</a>
+            </li>
+            <li>
+                <a title="Prime" href="http://primevideo.com">Prime Video</a>
+            </li>
+            <li>
+                <a title="Spotify" href="https://spotify.com">Spotify</a>
+            </li>
+            <li>
+                <a title="Streaming Disney" href="">Disney Plus</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
