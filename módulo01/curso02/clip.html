@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            color: white;
+            background-color: palevioletred;
+            border: 15px dashed palegreen;
+            padding: 30px;
+            font-size: 40px;
+            font-weight: 900;
+            --s: 150px; /* control the size*/
+            --c1: #f7d2a1;
+            --c2: #05057e;
+            --_g: 
+                var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+                var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+                #0000 96%;
+            background:
+                radial-gradient(50% 50% at 100% 0,var(--_g)),
+                radial-gradient(50% 50% at 0 100%,var(--_g)),
+                radial-gradient(50% 50%,var(--_g)),
+                radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+                var(--c1);
+            background-size: var(--s) var(--s);
+            }
+
+        #padding-box {
+            background-clip: padding-box;
+        }
+
+        #border-box {
+            background-clip: border-box;
+        }
+
+        #content-box {
+            background-clip: content-box;
+        }
+
+        #text {
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <code>background-origin: padding-box;</code>
+    <div class="exemplo" id="padding-box">
+        TRILHA DE CSS
+    </div>
+
+    <br>
+
+    <code>background-origin: border-box;</code>
+    <div class="exemplo" id="border-box">
+        TRILHA DE CSS
+    </div>
+
+    <br>
+
+    <code>background-origin: content-box;</code>
+    <div class="exemplo" id="content-box">
+        TRILHA DE CSS
+    </div>
+
+    <br>
+
+    <code>background-origin: text;</code>
+    <div class="exemplo" id="text">
+        TRILHA DE CSS
+</html>
