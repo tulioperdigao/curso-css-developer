@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando imagens de fundo</title>
+    <style>
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url(assets/f1-fundo-transparente.png), url(https://img.redbull.com/images/c_crop,x_117,y_0,h_2843,w_4264/c_fill,w_800,h_512/q_auto,f_auto/redbullcom/2024/7/28/cpaophlzswwkj570t3og/max-verstappen-belgian-grand-prix-2024);
+        }
+
+        #cover {
+            background-size: cover;
+        }
+
+        #contain {
+            background-size: contain;
+        }
+
+        #tamanho {
+            background-size: 50%;
+        }
+
+        #exemplo-x-y {
+            background-size: 300px 100%;
+        }
+
+        #exemplo-camadas {
+            background-size: 200px 100%, cover;
+        }
+
+    </style>
+</head>
+<body>
+    <code>background-size: auto;</code>
+    <div id="auto" class="exemplo">
+
+    </div>
+
+    <br>
+
+    <code>background-size: cover;</code>
+    <div id="cover" class="exemplo">
+
+    </div>
+
+    <br>
+
+    <code>background-size: contain;</code>
+    <div id="contain" class="exemplo">
+
+    </div>
+
+    <br>
+
+    <code>background-size: valor;</code>
+    <div id="tamanho" class="exemplo">
+
+    </div>
+
+    <br>
+
+    <code>background-size: valor-1 valor-2;</code>
+    <div id="exemplo-x-y" class="exemplo">
+
+    </div>
+
+    <br>
+
+    <code>background-size: camada-1 camada-2;</code>
+    <div id="exemplo-camadas" class="exemplo">
+
+    </div>
+</body>
+</html>
