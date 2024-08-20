@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .exemplo {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 40px solid;
+        }
+
+        #exemplo-1 {
+            border-image-source: url('https://s2-oglobo.glbimg.com/rW3k1JTbM2KCkM8U3qs0jwK8ukg=/0x0:4000x6000/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/1/W/ezgSKbRVqpKIAf9ZaVbw/strawberries-cut-half-whole-berries-ripe-berries-top-view-background-ripe-strawberries-delicious-natural-dessert.jpg');
+        }
+
+        #exemplo-2 {
+            border-image-source: linear-gradient(green, yellow);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bordas com imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div class="exemplo" id="exemplo-1"></div>
+    <br>
+    <div class="exemplo" id="exemplo-2"></div>
+</body>
+</html>
