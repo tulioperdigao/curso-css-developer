@@ -12,6 +12,23 @@
         .exemplo {
             background-color: palevioletred;
         }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        code {
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+
+        .esconder-elemento {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +57,27 @@
     <em class="exemplo">Exemplo Inline 03</em>
     <strong class="exemplo">Exemplo Inline 04</strong>
     <p class="exemplo" style="display: inline;">Teste 01</p>
+
+    <br><br>
+    <code>display: inline-block;</code>
+    <br><br>
+
+    <span class="exemplo inline-block">Exemplo Inline 02</span>
+    <em class="exemplo inline-block">Exemplo Inline 03</em>
+    <strong class="exemplo inline-block">Exemplo Inline 04</strong>
+    <p class="exemplo inline-block">Teste 01</p>
+
+    <br><br>
+    <code>display: none;</code>
+    <br><br>
+
+    <div>
+        <span class="exemplo esconder-elemento">Exemplo Inline 02</span>
+        <em class="exemplo esconder-elemento">Exemplo Inline 03</em>
+        <strong class="exemplo esconder-elemento">Exemplo Inline 04</strong>
+    </div>
+    <div style="display: inline;">
+        oi
+    </div>
 </body>
 </html>
