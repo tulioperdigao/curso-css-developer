@@ -2,15 +2,16 @@
 
 .container {
     background-color: palegreen;
-    padding: 20px;
+    /*padding: 20px;*/
     margin: 20px;
 
     display: flex;
+    justify-content: space-evenly;
 }
 
 .item {
     background-color: orange;
-    margin: 10px;
+    /*margin: 10px;*/
 }
 
 #container-01 {
