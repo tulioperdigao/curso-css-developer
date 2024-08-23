@@ -6,7 +6,6 @@
     margin: 20px;
 
     display: flex;
-    flex-wrap: wrap-reverse;
 }
 
 .item {
@@ -15,11 +14,11 @@
 }
 
 #container-01 {
-    flex-direction: row;
+    flex-flow: row wrap;
 
 }
 
 #container-02 {
-    flex-direction: column;
+    flex-flow: column wrap;
     height: 300px;
 }
