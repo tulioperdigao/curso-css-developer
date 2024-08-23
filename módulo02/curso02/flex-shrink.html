@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+
+            width: 300px;
+            height: 300px;
+
+            display: flex;
+            gap: 10px;
+        }
+
+        #container-01 {
+            flex-flow: row nowrap;
+        }
+
+        #container-02 {
+            flex-flow: column nowrap;
+        }
+
+        .item {
+            padding: 8px;
+            background-color: yellow;
+            min-width: 30px;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 1;
+        }
+
+        .item-03 {
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container-01">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+    </div>
+
+    <div class="container" id="container-02">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+    </div>
+</body>
+</html>
