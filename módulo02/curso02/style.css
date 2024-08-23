@@ -1,18 +1,11 @@
 @charset "UTF-8";
 
 .container {
-    background-color: palegreen;
-    /*padding: 20px;*/
-    margin: 20px;
-    width: 300px;
+    background-color: blueviolet;
+    margin-bottom: 20px;
     padding: 10px;
-    height: 250px;
     display: flex;
-    gap: 10px 20px;
-}
-
-.item {
-    background-color: orange;
+    gap: 10px;
 }
 
 #container-01 {
@@ -21,4 +14,13 @@
 
 #container-02 {
     flex-flow: column wrap;
+}
+
+.item {
+    background-color: yellow;
+    padding: 8px;
+}
+
+.item-04 {
+    order: -1;
 }
