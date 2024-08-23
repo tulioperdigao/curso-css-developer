@@ -3,10 +3,23 @@
 .container {
     background-color: palegreen;
     padding: 20px;
-    display: inline-flex;
+    margin: 20px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .item {
     background-color: orange;
     margin: 10px;
+}
+
+#container-01 {
+    flex-direction: row;
+
+}
+
+#container-02 {
+    flex-direction: column;
+    height: 300px;
 }
