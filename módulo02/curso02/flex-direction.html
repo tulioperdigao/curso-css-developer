@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - exemplos</title>
+    <title>Flex-Direction</title>
     <style>
         .container {
             background-color: palegreen;
-            padding: 10px;
-            margin: 10px;
+            padding: 20px;
+            margin: 20px;
 
             display: flex;
         }
@@ -23,17 +23,16 @@
         }
 
         #container-02 {
-            flex-direction: row-reverse;
+            flex-direction: column;
         }
 
         #container-03 {
-            flex-direction: column;
+            flex-direction: row-reverse;
         }
 
         #container-04 {
             flex-direction: column-reverse;
         }
-
     </style>
 </head>
 <body>
@@ -51,7 +50,6 @@
         <div class="item">Item 03</div>
         <div class="item">Item 04</div>
         <div class="item">Item 05</div>
-
     </div>
 
     <div class="container" id="container-03">
@@ -68,9 +66,6 @@
         <div class="item">Item 03</div>
         <div class="item">Item 04</div>
         <div class="item">Item 05</div>
-
     </div>
-</body>
-</html>
 </body>
 </html>
