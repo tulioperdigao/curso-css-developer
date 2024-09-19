@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Pt.3</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 135px 3fr 1fr;
+            grid-template-areas: "logo navbar"
+            "sidebar main"
+            "sidebar footer";
+        }
+
+        .logo {
+            background-color: lightcoral;
+            grid-area: logo;
+        }
+
+        nav{
+            background-color: yellow;
+            grid-area: navbar;
+        }
+
+        aside {
+            background-color: palevioletred;
+            grid-area: sidebar;
+        }
+
+        main {
+            background-color: skyblue;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: palegreen;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo.png" alt="CSS DEVELOPER TRILHA" width="150px">
+    </div>
+    <nav>navbar</nav>
+    <aside>sidebar</aside>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque eum tempore dicta, architecto qui illum earum libero accusantium odio sed inventore quo ipsam molestias officiis numquam cum quaerat beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum labore minus sed quidem assumenda necessitatibus ullam quos repellat dicta, illum quia, vero architecto fuga, harum repellendus delectus. Natus, culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus explicabo perferendis reprehenderit eveniet veniam tempore illum ratione assumenda necessitatibus incidunt neque, quam architecto quia sapiente eius iusto quos minus eum!</p>
+    </main>
+    <footer>Oi, eu sou um rodapé</footer>
+</body>
+</html>
