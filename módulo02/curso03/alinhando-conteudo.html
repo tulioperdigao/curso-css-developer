@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content e Align-content</title>
+</head>
+<style>
+    .container {
+        border: 3px solid;
+        height: 80vh;
+
+        display: grid;
+        grid-template: repeat(3, 100px) / repeat(3, auto);
+        
+
+        gap: 15px;
+        place-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    .item-01 {
+        background-color: palegoldenrod;
+    }
+
+    .item-02 {
+        background-color: paleturquoise;
+    }
+
+    .item-03 {
+        background-color: palegreen;
+    }
+
+    .item-04 {
+        background-color: palevioletred;
+    }
+
+    .item-05 {
+        background-color: lightseagreen;
+    }
+
+    .item-06 {
+        background-color: blueviolet;
+    }
+
+    .item-07 {
+        background-color: lightgreen;
+    }
+
+    .item-08 {
+        background-color: blanchedalmond;
+    }
+
+    .item-09 {
+        background-color: lightblue;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item-01">Ana Paula</div>
+    <div class="item-02">Rebeca Lopes Oliveira</div>
+    <div class="item-03">Pedro Jacinto</div>
+    <div class="item-04">André Gomes</div>
+    <div class="item-05">Alice Pereira Andrade</div>
+    <div class="item-06">Camila Gonçalves</div>
+    <div class="item-07">Sofia Antonieta</div>
+    <div class="item-08">Kaio Ribeiro</div>
+    <div class="item-09">Michele Ambrosio</div>
+</div>
+</body>
+</html>
