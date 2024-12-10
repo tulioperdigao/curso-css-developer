@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minmax Grid-Layout</title>
+    <title>Document</title>
     <style>
         .container {
             background-color: yellow;
             padding: 10px;
             margin-bottom: 20px;
+            height: 500px;
 
             display: grid;
-            grid-template-columns: repeat(3, minmax(100px,400px));
-            grid-auto-rows: minmax(100px, auto);
-            
+            grid-template-columns: repeat(auto-fit, 100px);
+            grid-template-rows: 2fr 1fr 2fr;
         }
 
         .item {
@@ -27,7 +27,7 @@
         .item-02 {
             background-color: cornflowerblue;
         }
-        
+
         .item-03 {
             background-color: palegreen;
         }
@@ -41,11 +41,7 @@
         }
 
         .item-06 {
-            background-color: cyan;
-        }
-
-        .item-07 {
-            background-color: brown;
+            background-color: aqua;
         }
     </style>
 </head>
@@ -55,9 +51,8 @@
         <div class="item item-02">Item 02</div>
         <div class="item item-03">Item 03</div>
         <div class="item item-04">Item 04</div>
-        <div class="item item-05">Item 05 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro, ducimus nobis repellat distinctio culpa accusantium odio nulla dolores itaque labore alias expedita quidem eligendi, perspiciatis esse. Dignissimos, magni voluptatum?</div>
+        <div class="item item-05">Item 05</div>
         <div class="item item-06">Item 06</div>
-        <div class="item item-07">Item 07</div>
     </div>
 </body>
 </html>
