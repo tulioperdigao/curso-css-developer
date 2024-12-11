@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com logo</title>
+    <style>
+        body {
+            margin: 0;
+
+            display: grid;
+            grid-template-columns: 150px repeat(2, 1fr) 100px;
+            grid-template-rows: 100px repeat(2, 250px) 100px;
+            grid-template-areas: 
+            "logo navbar navbar navbar"
+            "main main . sidebar"
+            "main main . sidebar"
+            "footer footer footer footer";
+        }
+
+        .logo {
+            grid-area: logo;
+        }
+
+        nav {
+            grid-area: navbar;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: bisque;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: palegreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo do curso de CSS" width="100px">
+    </div>
+    <nav>
+        Navbar
+    </nav>
+    <aside>
+        Sidebar
+    </aside>
+    <main>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ea amet illum accusamus iste id voluptatibus eum excepturi totam cumque adipisci enim rerum, necessitatibus, maiores magnam optio culpa, fuga iure?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam ad expedita at fugit voluptatum perferendis, voluptate exercitationem sint, sequi ut quisquam tenetur beatae delectus cupiditate accusantium dolorem quasi. Placeat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam tenetur enim omnis est sunt voluptas, ad voluptatibus nemo ducimus dolor nihil distinctio corporis vero eius aut non itaque rerum.
+        </p>
+    </main>
+    <footer>
+        Rodapé legal demais né sô
+    </footer>
+</body>
+</html>
