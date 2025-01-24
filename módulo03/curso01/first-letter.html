@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-elementos</title>
+    <style>
+        code {
+            background-color: lightgray;
+        }
+
+        #exemplo p::first-letter {
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de declará-lo no HTML, ou para selecionar uma parte de algum elemento.</p>
+    <p>Identificado por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+    <p>Seleciona a primeira letra da primeira linha.</p>
+    <p>Propriedades disponíveis</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>margin</code></li>
+        <li><code>padding</code></li>
+        <li><code>border</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+    <section id="exemplo">
+        <h2>Exemplo:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minima accusantium ratione rerum, libero quam assumenda culpa obcaecati autem nisi sequi facilis magnam quo error sint accusamus et, debitis maiores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex consequuntur, architecto praesentium libero illum sed harum corporis, deserunt, delectus vero maiores mollitia quas quod hic reprehenderit dolorem laudantium tempore!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, reiciendis est. Voluptatibus, debitis saepe! Neque tenetur libero fuga consequatur! Exercitationem a accusamus ipsa, illo dolorum cupiditate aspernatur repellendus quia officiis!</p>
+    </section>
 </body>
 </html>
