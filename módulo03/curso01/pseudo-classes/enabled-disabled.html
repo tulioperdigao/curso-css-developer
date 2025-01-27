@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        button:disabled {
+            background-color: gray;
+            color: white;
+            border: none;
+            box-shadow: 0px 0px 5px 2px gray;
+        }
+
+        button:enabled {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | :enabled e :disabled</h1>
+
+    <button>Botao Habilitado</button>
+    <button disabled>Botao Desabilitado</button>
+</body>
+</html>
