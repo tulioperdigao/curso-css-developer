@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        button {
+            background-color: #0b57d0;
+            color: white;
+            padding: 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: none;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: darkblue;
+            box-shadow: 1px 1px 2px black;
+        }
+
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: palegoldenrod;
+            margin-top: 30px;
+        }
+
+        .container:hover {
+            background: url(https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | :hover</h1>
+    <button>
+        Entrar em contato
+    </button>
+
+    <div class="container">
+
+    </div>
+</body>
+</html>
