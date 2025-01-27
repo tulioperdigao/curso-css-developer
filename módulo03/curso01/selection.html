@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        code {
+            background-color: lightgray;
+        }
+
+        .exemplo::selection {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elemento - <code>::selection</code></h1>
+    <p>Permite estilizar a seleção de textos no navegador.</p>
+
+    <p>Propriedades aceitas:</p>
+    <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>text</li>
+    </ul>
+
+    <hr>
+
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis eveniet minima cumque non, sint, similique asperiores odit quas unde obcaecati? Veritatis accusamus nulla minus assumenda aut earum nisi nam.</p>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis eveniet minima cumque non, sint, similique asperiores odit quas unde obcaecati? Veritatis accusamus nulla minus assumenda aut earum nisi nam.</p>
+</body>
+</html>
