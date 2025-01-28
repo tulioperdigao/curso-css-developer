@@ -9,9 +9,26 @@
             accent-color: red;
         }
 
-        input:checked + label{
+        input[type="checkbox"]:checked + label{
             color: red;
             text-decoration: line-through;
+        }
+
+        input[type="radio"] {
+            accent-color: blue;
+        }
+
+        input[type="radio"]:checked + label{
+            color: blue;
+        }
+
+        option:checked {
+            color: red;
+            font-weight: bold;
+        }
+
+        progress:indeterminate {
+            accent-color: red;
         }
     </style>
 </head>
@@ -42,5 +59,22 @@
     <hr>
 
     <input type="radio" name="sexo">
+    <label for="genero">Masculino</label>
+    <input type="radio" name="sexo">
+    <label for="genero">Feminino</label>
+    <input type="radio" name="sexo">
+    <label for="genero">Outro</label>
+
+    <hr>
+
+    <select name="">
+        <option value="chocolate">Chocolate</option>
+        <option value="menta">Menta</option>
+        <option value="morango">Morango</option>
+    </select>
+
+    <hr>
+
+    <progress></progress>
 </body>
 </html>
