@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        /* Tabela */
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem;
+        }
+
+        td + td,
+        th + th {
+            text-align: right;
+        }
+
+        /* Exemplo 1 */
+
+        article :nth-of-type(2) {
+            color: red;
+        }
+
+        /* Exemplo 2 */
+
+        tr:nth-child(even) td {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: gray;
+        }
+
+        /* Exemplo 3 */
+
+        li:nth-child(3n + 1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes:</h1>
+    <br>
+    <div>
+        <input type="checkbox" name="choice">
+        <label for="choice">:nth-child</label>
+    </div>
+    <div>
+        <input type="checkbox" name="escolha">
+        <label for="escolha">:nth-of-type</label>
+    </div>
+
+    <hr>
+
+    <article>
+        <span class="exemplo">Teste - Span</span>
+        <span>Teste 02</span>
+        <p class="exemplo">
+            I am the first paragraph.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio libero quod voluptate sapiente ab modi explicabo tempore cum consequatur! Fugiat molestias magnam nam modi, eum at obcaecati sapiente unde asperiores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rerum nemo officia? Placeat labore culpa facere fugit totam animi tempore nesciunt temporibus, non, tenetur porro. Nemo itaque eius sed voluptatibus!
+        </p>
+        <p class="exemplo">
+            I am the last paragraph.
+        </p>
+    </article>
+
+    <hr>
+
+    <div class="listas">
+        <ul id="lista-1">
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+            <li>Item 06</li>
+            <li>Item 07</li>
+            <li>Item 08</li>
+            <li>Item 09</li>
+            <li>Item 10</li>
+        </ul>
+        <br>
+        <ul id="lista-2">
+            <li>Categoria 01</li>
+            <li>Categoria 02</li>
+            <li>Categoria 03</li>
+            <li>Categoria 04</li>
+            <li>Categoria 05</li>
+            <li>Categoria 06</li>
+            <li>Categoria 07</li>
+            <li>Categoria 08</li>
+            <li>Categoria 09</li>
+            <li>Categoria 10</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 123.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 70.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 333.33</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 123.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 70.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 333.33</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
