@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        .post :is(h2, li, .red) {
+            color: red;
+        }
+
+        :is(section, article, aside, nav) p {
+            background-color: pink;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes:</h1>
+    <br>
+    <div style="background-color: transparent;">
+        <input type="checkbox" name="choice">
+        <label for="choice">:is</label>
+    </div>
+
+    <hr>
+
+    <div class="post">
+        <h2>Meu post</h2>
+        <p>Sumário:</p>
+        <ul>
+            <li>Capítulo 01</li>
+            <li>Capítulo 02</li>
+            <li>Capítulo 03</li>
+            <li>Capítulo 04</li>
+        </ul>
+
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia necessitatibus quae totam odit suscipit, incidunt tenetur labore molestiae? Saepe placeat ipsa expedita quaerat ratione labore dolore ipsum error voluptas.</p>
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia necessitatibus quae totam odit suscipit, incidunt tenetur labore molestiae? Saepe placeat ipsa expedita quaerat ratione labore dolore ipsum error voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum, voluptatem dolor aut repellendus aliquam. Inventore nesciunt itaque quis rem dolorem eveniet cum rerum quaerat. Totam dolorum pariatur eius cupiditate.</p>
+    </div>
+
+    <hr>
+
+    <section>
+        <p>Exemplo 1</p>
+    </section>
+    <article>
+        <p>Exemplo 2</p>
+    </article>
+    <aside>
+        <p>Exemplo 3</p>
+    </aside>
+    <nav>
+        <p>Exemplo 4</p>
+    </nav>
+
+</body>
+</html>
