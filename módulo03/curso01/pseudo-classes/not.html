@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        .post p:not(.irrelevante) {
+            color: red;
+        }
+
+        li:not(:first-child, :last-child) {
+            font-weight: bold;
+        }
+
+        img:not([alt]) {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes:</h1>
+    <br>
+    <div style="background-color: transparent;">
+        <input type="checkbox" name="choice">
+        <label for="choice">:not</label>
+    </div>
+
+    <hr>
+
+    <div class="post">
+        <h2 class="irrelevante">Posts</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident asperiores praesentium illo cupiditate autem repudiandae, qui aperiam hic quo assumenda fuga consequatur quasi neque dolores officiis dicta deserunt? Reiciendis, excepturi.</p>
+        <p>Lorem <b>ipsum dolor</b>, sit amet consectetur adipisicing elit. Provident asperiores praesentium illo cupiditate autem repudiandae, qui aperiam hic quo assumenda fuga consequatur quasi neque dolores officiis dicta deserunt? Reiciendis, excepturi.</p>
+        <p>Lorem ipsum dolor, sit <strong>amet consectetur</strong> adipisicing elit. Provident asperiores praesentium illo cupiditate autem repudiandae, qui aperiam hic quo assumenda fuga consequatur quasi neque dolores officiis dicta deserunt? Reiciendis, excepturi.</p>
+        <p class="irrelevante">Ignorar esse parágrafo</p>
+    </div>
+
+    <hr>
+
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+    </ul>
+
+    <hr>
+    <br><br>
+
+    <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQtalUOvY0K1eqW-IifNECnla1ss5WzpMag&s" alt="Com texto alternativo">
+    <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQtalUOvY0K1eqW-IifNECnla1ss5WzpMag&s">
+
+</body>
+</html>
