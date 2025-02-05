@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        li:nth-last-child(odd) {
+            font-weight: bold;
+            color: red;
+        }
+
+        dl :nth-last-of-type(1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes:</h1>
+    <br>
+    <div>
+        <input type="checkbox" name="choice">
+        <label for="choice">:nth-last-child</label>
+    </div>
+    <div>
+        <input type="checkbox" name="escolha">
+        <label for="escolha">:nth-last-of-type</label>
+    </div>
+
+    <hr>
+
+    <p>Eight deadliest wilsfires:</p>
+    <ol reversed>
+        <li>Matheson Fire</li>
+        <li>Miramichi Fire</li>
+        <li>1997 Idonesian fires</li>
+        <li>Thumb Fire</li>
+        <li>Great Hinckley Fire</li>
+        <li>Cloquet Fire</li>
+        <li>Kursha-2 Fire</li>
+        <li>Peshtigo Fire</li>
+    </ol>
+
+    <hr>
+
+    <dl>
+        <dt>Vegetais:</dt>
+        <dd>1. Tomates</dd>
+        <dd>2. Pepinos</dd>
+        <dd>3. Cogumelos</dd>
+        <dt>Frutas:</dt>
+        <dd>4. Maçãs</dd>
+        <dd>5. Mangas</dd>
+        <dd>6. Pêras</dd>
+        <dd>7. Laranjas</dd>
+    </dl>
+</body>
+</html>
