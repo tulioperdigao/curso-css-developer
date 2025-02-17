@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            background-color: #d53369;
+            animation-name: exemplo;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes exemplo{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            50% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            100% {
+                background: purple;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
